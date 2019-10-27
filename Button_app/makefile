@@ -1,7 +1,7 @@
 sources=$(wildcard *.c)
 objs=$(sources:.c=.o)
 # Ovde postaviti ime izvrsnog fajla: result=ime
-result=ledpwm
+result=button_test
 
 all: $(result)
 $(result): $(objs)

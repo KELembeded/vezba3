@@ -1,16 +1,16 @@
 #! /bin/bash
 # instantiating led driver into kernel
-if [ ! -e /dev/myled ]
+if [ ! -e /dev/led ]
 then
-    insmod /root/drivers/led_driver/myled.ko
+    insmod /drivers/led_driver/led_driver.ko
 fi
 # instantiating pushbutton driver into kernel
 if [ ! -e /dev/button ]
 then
-    insmod /root/drivers/button_driver/button.ko
+    insmod /drivers/button_driver/button_driver.ko
 fi
 # instantiating switch driver into kernel
 if [ ! -e /dev/switch ]
 then
-    insmod /root/drivers/switch_driver/switch.ko
+    insmod /drivers/switch_driver/switch_driver.ko
 fi
