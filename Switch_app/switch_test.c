@@ -6,7 +6,7 @@ int main ()
 {
 	FILE *fp;
 	char *str;
-	char tval1,tval2,tval3,tval4;
+	char sval1,sval2,sval3,sval4;
 	size_t num_of_bytes = 6;
 
 	while(1)
@@ -31,13 +31,13 @@ int main ()
 		}
 
 
-		tval1 = str[2] - 48;
-		tval2 = str[3] - 48;
-		tval3 = str[4] - 48;
-		tval4 = str[5] - 48;
+		sval1 = str[2] - 48;
+		sval2 = str[3] - 48;
+		sval3 = str[4] - 48;
+		sval4 = str[5] - 48;
 		free(str);
 
-		printf("Vrednosti prekidaca: %d %d %d %d \n",tval1,tval2,tval3,tval4);
+		printf("Vrednosti prekidaca: %d %d %d %d \n",sval1,sval2,sval3,sval4);
 		sleep(1);
 
 	}
